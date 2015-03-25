@@ -27,7 +27,8 @@ void print_list(struct node_struct* l){
 //Calcula la lista de forma iterativa.
 int leng_iter(struct node_struct* n){
 	int i = 0;
- 	for(; i<sizeof(n); i++){
+ 	for(; n!=NULL; n = n->next){
+ 		i = i+1;
 	}
  	return i;
 }
